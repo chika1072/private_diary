@@ -1,4 +1,5 @@
 .idea/
+media/
 *.pyc
 .venv/
 .env

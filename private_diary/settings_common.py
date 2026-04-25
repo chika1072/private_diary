@@ -102,7 +102,7 @@ ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 # ログイン/ログアウト後の遷移先を設定
-LOGIN_REDIRECT_URL = 'diary:index'
+LOGIN_REDIRECT_URL = 'diary:diary_list'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
 
 # ログアウトリンクのクリック一発でログアウトする設定
@@ -113,6 +113,8 @@ ACCOUNT_EMAIL_SUBJECT_PREFIX = ''
 
 # デフォルトのメール送信元を設定
 DEFAULT_FROM_EMAIL = os.environ.get('FROM_EMAIL')
+
+MEDIA_URL = '/media/'
 
 
 # Message tags
